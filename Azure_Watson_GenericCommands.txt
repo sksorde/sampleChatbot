@@ -1,0 +1,137 @@
+git pull origin master
+
+//https://sksworld.scm.azurewebsites.net/api/vfs/LogFiles/2019_07_01_RD281878626AB1_default_docker.log
+
+az group create --name sksAzureRG --location "UK South"
+
+az appservice plan create --name sksAppServPlan --resource-group sksAzureRG --sku FREE
+
+az webapp create --resource-group sksAzureRG --plan sksAppServPlan --name sksIncApp
+
+az webapp config appsettings set --resource-group sksAzureRG --name sksIncApp --settings WEBSITE_NODE_DEFAULT_VERSION=10.14.1
+
+http://sksIncApp.azurewebsites.net
+
+https://sksIncApp.scm.azurewebsites.net/ZipDeployUI
+
+
+https://sksworld.scm.azurewebsites.net/DebugConsole/Default.cshtml
+
+az webapp stop --name sksworld --resource-group SKSWorld
+
+===========================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+az webapp create -g MyResourceGroup -p MyPlan -n MyUniqueAppName --runtime "node|6.2" --deployment-local-git
+
+az webapp restart --name sksIncApp --resource-group sksAzureRG
+
+az webapp show --name sksIncApp --resource-group sksAzureRG
+
+az webapp ssh -n sksAzureApp -g sksAzureRG
+
+az webapp up -n sksAzureApp
+az webapp up -n sksAzureApp --logs
+
+az webapp start --name sksIncApp --resource-group sksAzureRG
+
+az webapp stop --name sksIncApp --resource-group sksAzureRG
+
+az webapp update -g MyResourceGroup -n MyAppName --set tags.tagName=tagValue
+
+az webapp create-remote-connection [--ids]
+                                   [--name]
+                                   [--port]
+                                   [--resource-group]
+                                   [--slot]
+                                   [--subscription]
+                                   [--timeout]
+								   
+az webapp create -g MyResourceGroup -p MyPlan -n MyUniqueAppName --runtime "node|6.2" --deployment-local-git
+			
+
+C:\Users\sordes\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Users\sordes\AppData\Local\Programs\Fiddler;D:\kafka\bin\windows
+
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\app\product\11.1.0\client_1\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\MongoDB\Server\4.0\bin;C:\Program Files\Git\cmd;D:\kafka\bin\windows
+
+
+https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-nodejs
+
+Welcome to Azure Cloud Shell
+
+Type "az" to use Azure CLI
+Type "help" to learn about Cloud Shell
+
+sailesh@Azure:~$ z webapp list-runtimes
+bash: z: command not found
+sailesh@Azure:~$ az webapp list-runtimes
+sailesh@Azure:~$ az webapp stop --name sksworld --resource-group SKSWorld
+sailesh@Azure:~$ az group create --name sksAzureRG --location "UK South"
+sailesh@Azure:~$ az appservice plan create --name sksAppServPlan --resource-group sksAzureRG --sku FREE
+sailesh@Azure:~$ az webapp create --resource-group sksAzureRG --plan sksAppServPlan --name sksIncApp
+sailesh@Azure:~$ az webapp config appsettings set --resource-group sksAzureRG --name sksIncApp --settings WEBSITE_NODE_DEFAULT_VERSION=10.14.1
+
+
+
+========
+
+gzip <filename>
+go to drive where u want to connect to ftp
+ftp 172.16.17.46
+provide credentials
+go to the directory from where u want to copy 
+for ex: cd /siebel/siebsrvr/enter*/*/*/logs
+get PSCcObjMgr_enu**.log
+
+CMEC Security QA Updated =Pending
+
+
+https://sksworld.scm.azurewebsites.net/
+
+Environment
+Build
+82.10417.3867.0 (1af92bb5ae)
+Site up time
+00.05:07:23
+Site folder
+/home
+Temp folder
+/tmp/
+REST API (works best when using a JSON viewer extension)
+App Settings
+Deployments
+Source control info
+Files
+Current Docker logs (Download as zip)
+More information about Kudu can be found on the wiki.
+
+https://sksworld.scm.azurewebsites.net
+
+https://sksworld.azurewebsites.net/
+========
+
+https://github.com/IBM/watson-banking-chatbot
+
+https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/IBM/watson-banking-chatbot.git&env_id=ibm:yp:eu-gb
+
+https://cloud.ibm.com/devops/toolchains/b769290b-eb50-4e0a-8809-002fec912c4e?env_id=ibm:yp:eu-gb
+
+https://cloud.ibm.com/devops/create?env_id=ibm:yp:eu-gb
+
+Your app is being created! Quick start: To watch the pipeline deploy your app, click Delivery Pipeline. After the app is deployed, you can see it running by clicking View app.
+
+Incident Management chatbot
+watson-banking-chatbot-20190709182518932
+
+
+watson-banking-chatbot-20190709185635053
+
+https://cloud.ibm.com/devops/toolchains/85f46a4c-d47e-4ffd-a74c-2455f75c1f43?env_id=ibm:yp:eu-gb
+
+Continuous Delivery service required:
+
+A service instance was not found in this resource group and region eu-gb. If you do not take action, the service will stop running Delivery Pipeline jobs after 7/16/2019, 7:03 PM UTC. Add the service to the resource group to ensure uninterrupted use of the service. Learn more.
+
+https://cloud.ibm.com/catalog/services/continuous-delivery?location=eu-gb
+
+
+===========

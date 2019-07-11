@@ -1,0 +1,173 @@
+{
+  "id": "/subscriptions/ef0cf94b-8649-45fa-baf3-7b64963ef5c2/resourceGroups/SKSWorld/providers/Microsoft.Web/sites/sksworld",
+  "name": "sksworld",
+  "type": "Microsoft.Web/sites",
+  "kind": "app,linux",
+  "location": "UK South",
+  "tags": {},
+  "properties": {
+    "name": "sksworld",
+    "state": "Stopped",
+    "hostNames": [
+      "sksworld.azurewebsites.net"
+    ],
+    "webSpace": "SKSWorld-UKSouthwebspace",
+    "selfLink": "https://waws-prod-ln1-011.api.azurewebsites.windows.net:454/subscriptions/ef0cf94b-8649-45fa-baf3-7b64963ef5c2/webspaces/SKSWorld-UKSouthwebspace/sites/sksworld",
+    "repositorySiteName": "sksworld",
+    "owner": null,
+    "usageState": "Normal",
+    "enabled": true,
+    "adminEnabled": true,
+    "enabledHostNames": [
+      "sksworld.azurewebsites.net",
+      "sksworld.scm.azurewebsites.net"
+    ],
+    "siteProperties": {
+      "metadata": null,
+      "properties": [
+        {
+          "name": "LinuxFxVersion",
+          "value": "NODE|10.12"
+        },
+        {
+          "name": "WindowsFxVersion",
+          "value": null
+        }
+      ],
+      "appSettings": null
+    },
+    "availabilityState": "Normal",
+    "sslCertificates": null,
+    "csrs": [],
+    "cers": null,
+    "siteMode": null,
+    "hostNameSslStates": [
+      {
+        "name": "sksworld.azurewebsites.net",
+        "sslState": "Disabled",
+        "ipBasedSslResult": null,
+        "virtualIP": null,
+        "thumbprint": null,
+        "toUpdate": null,
+        "toUpdateIpBasedSsl": null,
+        "ipBasedSslState": "NotConfigured",
+        "hostType": "Standard"
+      },
+      {
+        "name": "sksworld.scm.azurewebsites.net",
+        "sslState": "Disabled",
+        "ipBasedSslResult": null,
+        "virtualIP": null,
+        "thumbprint": null,
+        "toUpdate": null,
+        "toUpdateIpBasedSsl": null,
+        "ipBasedSslState": "NotConfigured",
+        "hostType": "Repository"
+      }
+    ],
+    "computeMode": null,
+    "serverFarm": null,
+    "serverFarmId": "/subscriptions/ef0cf94b-8649-45fa-baf3-7b64963ef5c2/resourceGroups/SKSWorld/providers/Microsoft.Web/serverfarms/ASP-SKSWorld-9cfc",
+    "reserved": true,
+    "isXenon": false,
+    "hyperV": false,
+    "lastModifiedTimeUtc": "2019-07-03T01:46:51.0966667",
+    "storageRecoveryDefaultState": "Running",
+    "contentAvailabilityState": "Normal",
+    "runtimeAvailabilityState": "Normal",
+    "siteConfig": null,
+    "deploymentId": "sksworld",
+    "trafficManagerHostNames": null,
+    "sku": "PremiumV2",
+    "scmSiteAlsoStopped": false,
+    "targetSwapSlot": null,
+    "hostingEnvironment": null,
+    "hostingEnvironmentProfile": null,
+    "clientAffinityEnabled": false,
+    "clientCertEnabled": false,
+    "clientCertExclusionPaths": null,
+    "hostNamesDisabled": false,
+    "domainVerificationIdentifiers": null,
+    "kind": "app,linux",
+    "outboundIpAddresses": "51.140.177.236,51.140.46.202",
+    "possibleOutboundIpAddresses": "51.140.84.145,51.140.60.161,51.140.61.32,51.140.68.240,51.140.64.162,51.140.177.236,51.140.46.202",
+    "containerSize": 0,
+    "dailyMemoryTimeQuota": 0,
+    "suspendedTill": null,
+    "siteDisabledReason": 0,
+    "functionExecutionUnitsCache": null,
+    "maxNumberOfWorkers": null,
+    "homeStamp": "waws-prod-ln1-011",
+    "cloningInfo": null,
+    "hostingEnvironmentId": null,
+    "tags": {},
+    "resourceGroup": "SKSWorld",
+    "defaultHostName": "sksworld.azurewebsites.net",
+    "slotSwapStatus": null,
+    "httpsOnly": false,
+    "redundancyMode": "None",
+    "inProgressOperationId": null,
+    "geoDistributions": null
+  }
+}
+
+======================
+
+NodeJS (ES2015+) (must).
+ExpressJS HTML5, CSS3Client-side JavaScript.
+Knowledge of at least one Frontend frameworks like Nunjucks, Freemarker, Bootstrap, LESS and SASS.
+Experience in building accessible, responsive designs that support down to IE8.
+Experience with BDD, writing the spec files that run Gherkin scripts, using WebDriverIO (or any other Selenium driver).
+Experience with using a test-driven approach to building applications and using static-analysis tooling to drive towards quality code.
+Knowledge of best practices for coding defensively against possible attack vectors, and testing with OWASP tooling (e.g. ZAP).
+Test experience: unit, integration, performance, security.
+Java (1.8) (including Spring Boot, Drop Wizard, Jersey, CXF and Maven) – (desirable).
+Experience in CI tooling: Git, Gitlab CI, Jenkins, SonarQube Nexus, Artifactory, No SQL database AWS or Azure – (desirable).
+
+
+Node.js, Express and MongoDB Dev to Deployment
+By Brad Traversy
+
+mongodb://sksorde:RZnrNrxieKninKoiBFPCEd54AYnIJhAs86YrVimcgPIkxJ4Z70X3dmzOmV4WsWllJ5klBmDn0pwoxDIzT1kVQQ%3D%3D@sksorde.documents.azure.com:10255/?ssl=true
+
+az group create --name nodeCosmosDBRG --location "uk south"
+az cosmosdb create --name inc --resource-group nodeCosmosDBRG --kind MongoDB
+
+
+Once the repository is created you will find a remote repository URL like this https://github.com/sanathjs/Node-Azure.git
+
+Now go back to command prompt and Just click ctrl+c to stop server in command prompt
+
+And run the below commands one by one.
+
+C:\DemoNode>git init
+C:\DemoNode>git add -A
+C:\DemoNode>git commit –m “Initial Message”.
+C:\DemoNode>git remote add origin https://github.com/tequiso/myApp.git
+C:\DemoNode>git push --force origin master
+
+git remote add origin https://github.com/sksorde/sksApp.git
+git remote remove origin
+
+
+az webapp deployment user set --user-name "sksorde" --password "newPass1"
+{
+  "id": null,
+  "kind": null,
+  "name": "web",
+  "publishingPassword": null,
+  "publishingPasswordHash": null,
+  "publishingPasswordHashSalt": null,
+  "publishingUserName": "sksorde",
+  "scmUri": null,
+  "type": "Microsoft.Web/publishingUsers/web"
+}
+
+az webapp deployment source config-local-git --name IncidentApp
+
+az webapp deployment source config-local-git --name IncidentApp --resource-group nodeCosmosDBRG
+{ "url": "https://sksworld.azurewebsites.net/IncidentApp.git" }
+git remote add azure https://chrisdias@myexpressapp-chrisdias.scm.azurewebsites.net/myExpressApp-chrisdias.git
+git push azure master
+
+================

@@ -1,0 +1,35 @@
+C:\DemoNode>git init
+C:\DemoNode>git add -A
+C:\DemoNode>git commit –m “Initial Message”.
+C:\DemoNode>git remote add origin https://github.com/tequiso/myApp.git
+C:\DemoNode>git push --force origin master
+
+Command line instructions
+
+Git global setup
+git config --global user.name "Sailesh Sorde"
+git config --global user.email "sksorde@gmail.com"
+
+Create a new repository
+git clone https://eu-gb.git.cloud.ibm.com/sksorde/sksChatBot.git
+cd sksChatBot
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+Existing folder
+cd existing_folder
+git init
+git remote add origin https://eu-gb.git.cloud.ibm.com/sksorde/sksChatBot.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+Existing Git repository
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin https://eu-gb.git.cloud.ibm.com/sksorde/sksChatBot.git
+git push -u origin --all
+git push -u origin --tags
+

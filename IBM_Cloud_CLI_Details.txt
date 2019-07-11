@@ -1,0 +1,131 @@
+It seems the issue was due to the port 9020 has not been listening on couple of nodes on ECS cluster as the rpcbind is preventing to start the 9020 port. After stopping the rpcbind service, the port 9020 started listening. Not seeing this issue any more at least since the 9020 port is listening on all nodes.
+
+{
+  "links": {
+    "self": {
+      "href": "https://api.eu-gb.cf.cloud.ibm.com"
+    },
+    "cloud_controller_v2": {
+      "href": "https://api.eu-gb.cf.cloud.ibm.com/v2",
+      "meta": {
+        "version": "2.128.0"
+      }
+    },
+    "cloud_controller_v3": {
+      "href": "https://api.eu-gb.cf.cloud.ibm.com/v3",
+      "meta": {
+        "version": "3.63.0"
+      }
+    },
+    "network_policy_v0": {
+      "href": "https://api.eu-gb.cf.cloud.ibm.com/networking/v0/external"
+    },
+    "network_policy_v1": {
+      "href": "https://api.eu-gb.cf.cloud.ibm.com/networking/v1/external"
+    },
+    "uaa": {
+      "href": "https://uaa.eu-gb.cf.cloud.ibm.com"
+    },
+    "credhub": null,
+    "routing": null,
+    "logging": {
+      "href": "wss://doppler.eu-gb.cf.cloud.ibm.com:443"
+    },
+    "app_ssh": {
+      "href": "ssh.eu-gb.cf.cloud.ibm.com:2222",
+      "meta": {
+        "host_key_fingerprint": "c7:1f:89:2a:62:3b:78:a9:08:c9:33:81:fb:39:26:da",
+        "oauth_client": "ssh-proxy"
+      }
+    }
+  }
+}
+
+===============
+https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started
+
+Run command from windows right click power shell(admin):
+[Net.ServicePointManager]::SecurityProtocol = "Tls12"; iex(New-Object Net.WebClient).DownloadString('https://ibm.biz/idt-win-installer')
+
+===============
+Skill Details
+Skill Name:Incident Management
+Skill ID:baec49e6-c5b3-4c49-9cd4-4f479d158aa2
+Workspace ID:a923f280-0da2-4db6-9da1-467a1bb3af46
+Legacy v1 Workspace URL:https://gateway-lon.watsonplatform.net/assistant/api/v1/workspaces/a923f280-0da2-4db6-9da1-467a1bb3af46/message
+Service Credentials
+Service Credentials Name:Auto-generated service credentials
+Username:apikey
+Password:cv6kb9sGrT2c7qYhAU9UXOfTh9doOI4QAkWdjoNKx9Sn
+================
+Skill Details
+Skill Name:Customer Care Sample Skill
+Skill ID:4e493c04-55c0-419d-bfad-ee9653c5e471
+Workspace ID:beaeae1c-a523-4e85-8464-bd7b1e5c9a11
+Legacy v1 Workspace URL:https://gateway-lon.watsonplatform.net/assistant/api/v1/workspaces/beaeae1c-a523-4e85-8464-bd7b1e5c9a11/message
+Service Credentials
+Service Credentials Name:Auto-generated service credentials
+Username:apikey
+Password:cv6kb9sGrT2c7qYhAU9UXOfTh9doOI4QAkWdjoNKx9Sn
+===================
+
+https://github.com/watson-developer-cloud/assistant-simple
+
+https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases/  ====for installables
+
+====================
+>>ibmcloud login
+>>ibmcloud target --cf
+Targeted Cloud Foundry (https://api.eu-gb.bluemix.net)
+
+Targeted org sksorde@gmail.com
+
+Targeted space dev
+
+API endpoint:      https://cloud.ibm.com
+Region:            eu-gb
+User:              sksorde@gmail.com
+Account:           Sailesh Sorde's Account (cf33c8c84b7d4fcca20bd7d64eff9824)
+Resource group:    Default
+CF API endpoint:   https://api.eu-gb.bluemix.net (API version: 2.128.0)
+Org:               sksorde@gmail.com
+Space:             dev
+
+======================
+
+API Key for sksChatbot:
+3C0irLGkBY9T2b_rClp6P2HZbEjX7ie3ZR5cqUUF4Jck
+
+Created for toolchain: https://console.bluemix.net/devops/toolchains/b9e03933-f179-452a-98f7-a89f2e0072fe?env_id=ibm%3Ayp%3Aeu-gb
+
+Sailesh Sorde's Account
+ID: cf33c8c84b7d4fcca20bd7d64eff9824
+
+Parameter name of API Key: X-IBM-Client-Id
+sksAPIParamId
+Parameter name of API: X-IBM-Client-Secret
+
+https://docs.cloudfoundry.org/buildpacks/node/node-tips.html
+
+ibmcloud login
+ibmcloud target --cf
+ibmcloud app push
+
+==============================
+
+Skill Details
+Skill Name:Bank_Simple
+
+Skill ID:4e493c04-55c0-419d-bfad-ee9653c5e471
+
+Workspace ID:beaeae1c-a523-4e85-8464-bd7b1e5c9a11
+
+Legacy v1 Workspace URL:https://gateway-lon.watsonplatform.net/assistant/api/v1/workspaces/beaeae1c-a523-4e85-8464-bd7b1e5c9a11/message
+
+Service Credentials
+Service Credentials Name:Auto-generated service credentials
+
+Username:apikey
+
+Password:cv6kb9sGrT2c7qYhAU9UXOfTh9doOI4QAkWdjoNKx9Sn
+=============================
